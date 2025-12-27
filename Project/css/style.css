@@ -1,0 +1,505 @@
+:root {
+    --general-text: rgba(0, 0, 0, 1);
+    --general-bg: rgba(255, 255, 255, 1);
+}
+
+body {
+    color: var(--general-text);
+    background: var(--general-bg);
+}
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    /* overflow: hidden; */
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.container {
+    width: 1294px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/* ======================================================================= */
+
+.heaer__top {
+    margin-bottom: 20px;
+}
+
+.header__top-inner {
+    display: flex;
+    justify-content: space-between;
+    line-height: 80px;
+}
+
+.header__logo {}
+
+.nav {}
+
+.nav__list {
+    display: flex;
+    color: var(--general-text);
+    font-family: 'Inter';
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.nav__item-1 {
+    margin-right: 33px;
+}
+
+.nav__item-2 {
+    margin-right: 34px;
+}
+
+.nav__item-3 {
+    margin-right: 44px;
+}
+
+.solution {
+    margin-left: 3px;
+}
+
+.header__icons {
+    display: flex;
+    gap: 21px;
+    margin-right: 28px;
+}
+
+/* =============================================================================== */
+
+.hero {
+    margin-bottom: 75px;
+}
+
+.hero__inner {
+    max-height: 550px;
+    background-color: #DCE5E2;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 32px;
+    position: relative;
+}
+
+.hero__left-controls {
+    position: absolute;
+    background: transparent;
+    top: 262px;
+    left: 18px;
+}
+
+.hero__info {
+    padding-top: 145px;
+    width: 776px;
+    margin-left: 56px;
+}
+
+.hero__title {
+    color: var(--general-text);
+    font-family: 'Readex Pro';
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 69.6px;
+    text-align: left;
+    margin-bottom: 19px;
+}
+
+.hero__text {
+    color: var(--general-text);
+    font-family: 'Inter';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.2px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.hero__button {
+    color: var(--general-text);
+    font-family: 'Inter';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: capitalize;
+    background: none;
+    box-sizing: border-box;
+    border: 1px solid var(--general-text);
+    border-radius: 200px;
+    width: 170px;
+    height: 50px;
+}
+
+.hero__right-controls {
+    position: absolute;
+    background: transparent;
+    top: 262px;
+    right: 18px;
+}
+
+/* ============================================ */
+
+.offers {}
+
+.offers__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 55px;
+}
+
+.offers__title {
+    color: var(--general-text);
+    font-family: 'Readex Pro';
+    font-size: 42px;
+    line-height: 52.5px;
+    text-align: center;
+}
+
+.offers__subtitle {
+    color: var(--general-text);
+    font-family: 'Readex Pro';
+    max-width: 628px;
+    font-size: 14px;
+    line-height: 16.8px;
+    text-align: center;
+}
+
+/* =========================================== */
+.offers__grid {
+    display: grid;
+    grid-template-columns: 639px repeat(2, 312px);
+    gap: 16px;
+}
+
+.offers-card {
+    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+}
+
+.offers__left {
+}
+
+.offers__laptop {
+    margin-bottom: 72px;
+    padding: 0 42px;
+    display: block;
+}
+
+.offers__laptop-img {
+}
+
+.offer__laptop-text {
+    
+}
+
+.offers__laptop-label {
+    color: var(--general-text);
+    font-family: 'Inter';
+    font-size: 15px;
+    line-height: 19.2px;
+}
+
+.offers__laptop-title {
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Readex Pro';
+    font-size: 32px;
+    line-height: 38.4px;
+    max-width: 192px;
+}
+
+.offers__watch {
+    display: flex;
+    padding: 0 42px;
+    max-height: 270px;
+}
+
+.offers__watch-img {}
+
+.watch-discription {
+    align-items: center;
+    padding: 87px 0;
+}
+
+.offers__watch-label {
+    color: var(--general-text);
+    font-family: 'Inter';
+    font-size: 15px;
+    line-height: 19.2px;
+}
+
+.offers__watch-title {
+    color: var(--general-text);
+    font-family: 'Readex Pro';
+    font-size: 32px;
+    line-height: 38.4px;
+}
+
+.offers__phone {
+    padding: 144px 16px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.offers__phone-img {
+    margin-bottom: 41px;
+}
+
+.offers__phone-label {
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Inter';
+    font-size: 15px;
+    line-height: 19.2px;
+}
+
+.offers__phone-title {
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Readex Pro';
+    font-size: 32px;
+    line-height: 38.4px;
+}
+
+.offers__tablet {
+    overflow: hidden;
+    padding: 115px 0;
+    text-align: center;
+}
+
+.offers__tablet-img {
+    margin-left: -78px;
+}
+
+.offers__tablet-label {
+    color: var(--general-text);
+    font-family: 'Inter';
+    line-height: 19.2px;
+}
+
+.offers__tablet-title {
+    color: var(--general-text);
+    font-family: 'Readex Pro';
+    font-size: 32px;
+    line-height: 38.4px;
+    padding: 0 39px;
+    margin-bottom: 41px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================================ */
+
+/* .offers {
+    padding: 80px 0;
+}
+
+.offers__head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 9px;
+    margin-bottom: 56px;
+}
+
+.offers__title {
+    width: 780px;
+    height: 53px;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 52.5px;
+    text-align: center;
+    color: #000;
+}
+
+.offers__subtitle {
+    width: 628px;
+    height: 34px;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: center;
+    color: #000;
+}
+
+
+.offers__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-auto-rows: auto;
+    gap: 24px;
+}
+
+
+.offer-card {
+    background: #fff;
+    position: relative;
+    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+}
+
+.offers__left {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+
+
+.offer-card--laptop {
+    width: 639px;
+    height: 472px;
+}
+
+.offer-card--laptop .offer-card__frame {
+    width: 555px;
+    height: 472px;
+}
+
+.offer-card--laptop .offer-card__img {
+    width: 500px;
+    height: 377px;
+    object-fit: contain;
+}
+
+.offer-card--laptop .offer-card__label {
+    display: block;
+    margin-top: 16px;
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 19.2px;
+    text-align: right;
+}
+
+.offer-card--laptop .offer-card__title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 32px;
+    line-height: 38.4px;
+    text-align: right;
+}
+
+
+.offer-card--phones {
+    width: 312px;
+    height: 792px;
+    padding-top: 144px;
+    padding-left: 16px;
+    padding-right: 16px;
+    text-align: center;
+}
+
+.offer-card--phones .offer-card__img {
+    width: 100%;
+    object-fit: contain;
+    margin-bottom: 41px;
+}
+
+.offer-card--phones .offer-card__label {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 19.2px;
+}
+
+.offer-card--phones .offer-card__title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 32px;
+    line-height: 38.4px;
+}
+
+
+.offer-card--tablet {
+    width: 312px;
+    height: 792px;
+    padding-top: 144px;
+    text-align: center;
+}
+
+.offer-card--tablet .offer-card__label {
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.offer-card--tablet .offer-card__title {
+    margin-top: 8px;
+    margin-bottom: 42px;
+    font-family: "Readex Pro", sans-serif;
+    font-size: 32px;
+    line-height: 38.4px;
+}
+
+.offer-card--tablet .offer-card__img {
+    width: 467px;
+    height: 425px;
+    object-fit: contain;
+}
+
+
+.offer-watch {
+    margin-top: 72px;
+    width: 639px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    gap: 46px;
+    margin: 0 auto;
+    box-shadow: 0px 4px 35px 0px rgba(0, 0, 0, 0.25);
+}
+
+.offer-watch__content {
+    margin-left: 42px;
+    text-align: right;
+}
+
+.offer-watch__label {
+    font-family: "Inter", sans-serif;
+    font-size: 15px;
+    line-height: 19.2px;
+}
+
+.offer-watch__title {
+    font-family: "Readex Pro", sans-serif;
+    font-size: 32px;
+    line-height: 38.4px;
+}
+
+.offer-watch__img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+} */
