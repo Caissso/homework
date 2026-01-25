@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>California</title>
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/main.js"></script>
+    <script src="./js/interactive.js"></script>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__top-inner">
+                        <img src="./img/icons/log.svg" alt="Logo California" class="header__logo">
+                        <nav class="nav">
+                            <ul class="nav__list">
+                                <li class="nav__item-1">
+                                    <a href="#" class="nav__link">
+                                        All products
+                                    </a>
+                                </li>
+                                <li class="nav__item-2">
+                                    <a href="#" class="nav__link">
+                                        Solutions
+                                    </a>
+                                    <button class="solution" aria-label="Toggle solutions menu" aria-expanded="false">
+                                        <svg viewBox="0 0 12 8" xmlns="http://www.w3.org/2000/svg" width="12" height="8" fill="none" aria-hidden="true">
+                                            <path d="M11 1L6 6L1 1" stroke="#070847" stroke-width="1.5" fill="none" />
+                                        </svg>
+                                    </button>
+                                    <ul class="solutions-dropdown">
+                                        <li><a href="#" class="solutions-dropdown__link">Business Solutions</a></li>
+                                        <li><a href="#" class="solutions-dropdown__link">Education Solutions</a></li>
+                                        <li><a href="#" class="solutions-dropdown__link">Healthcare Solutions</a></li>
+                                        <li><a href="#" class="solutions-dropdown__link">Enterprise Solutions</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav__item-3">
+                                    <a href="#" class="nav__link">
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link">
+                                        Support
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="header__icons">
+                            <a href="#" class="header__icons-search" aria-label="Search">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" aria-hidden="true">
+                                    <path d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" />
+                                    <path d="M20.9999 20.9999L16.6499 16.6499" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" />
+                                </svg>
+                            </a>
+                            <a href="#" class="header__icons-cart" aria-label="Cart">
+                                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" aria-hidden="true">
+                                    <path d="M10 21C10 20.4477 9.55228 20 9 20C8.44772 20 8 20.4477 8 21C8 21.5523 8.44772 22 9 22C9.55228 22 10 21.5523 10 21Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" />
+                                    <path d="M21 21C21 20.4477 20.5523 20 20 20C19.4477 20 19 20.4477 19 21C19 21.5523 19.4477 22 20 22C20.5523 22 21 21.5523 21 21Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" />
+                                    <path d="M1 1L5 1L7.68 14.39C7.77144 14.8504 8.02191 15.264 8.38755 15.5583C8.75318 15.8526 9.2107 16.009 9.68 16L19.4 16C19.8693 16.009 20.3268 15.8526 20.6925 15.5583C21.0581 15.264 21.3086 14.8504 21.4 14.39L23 6L6 6" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" />
+                                </svg>
+                            </a>
+                        </div>
+                        <button class="burger" aria-label="Menu" aria-expanded="false">
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                            <span class="burger__line"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <section class="hero">
+                <div class="container">
+                    <div class="hero__inner">
+                        <div class="hero__info">
+                            <button type="button" class="hero__left-controls" aria-label="Previous slide">
+                                <img src="./img/icons/left.svg" alt="Previous slide">
+                            </button>
+                            <h1 class="hero__title">The new phones are here take a look.</h1>
+                            <p class="hero__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque
+                                in est dui, aliquam, tempor. Faucibus morbi turpis.</p>
+                            <button type="button" class="hero__button">Explore</button>
+                        </div>
+                        <div class="hero__content">
+                            <img src="./img/phones.png" alt="New phones collection" class="hero__img">
+                            <button type="button" class="hero__right-controls" aria-label="Next slide">
+                                <img src="./img/icons/right.svg" alt="Next slide">
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </header>
+        
+        <!-- Search Modal -->
+        <div class="search-modal" id="searchModal">
+            <div class="search-modal__overlay"></div>
+            <div class="search-modal__content">
+                <div class="search-modal__header">
+                    <h3 class="search-modal__title">Search</h3>
+                    <button class="search-modal__close" aria-label="Close search">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" aria-hidden="true">
+                            <path d="M18 6L6 18M6 6L18 18" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="search-modal__body">
+                    <div class="search-modal__input-wrapper">
+                        <input type="text" class="search-modal__input" id="searchInput" placeholder="Search for products...">
+                        <button class="search-modal__search-btn" aria-label="Search">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" aria-hidden="true">
+                                <path d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" />
+                                <path d="M20.9999 20.9999L16.6499 16.6499" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" />
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="search-modal__suggestions">
+                        <p class="search-modal__suggestions-title">Popular searches</p>
+                        <div class="search-modal__tags">
+                            <button class="search-modal__tag">Laptops</button>
+                            <button class="search-modal__tag">Phones</button>
+                            <button class="search-modal__tag">Tablets</button>
+                            <button class="search-modal__tag">Watches</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <main class="main">
+            <section class="offers">
+                <div class="container">
+                    <h2 class="offers__title">Shop our latest offers and categories</h2>
+                    <p class="offers__subtitle">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Scelerisque in est dui, aliquam,
+                        tempor. Faucibus morbi turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div class="offers__grid">
+                        <div class="offers__left">
+                            <div class="offers__laptop offers-card">
+                                <img src="./img/catalog/laptop-ct.png" alt="Laptop catalog" class="offers__laptop-img">
+                                <span class="offers__laptop-label">Laptops</span>
+                                <h3 class="offers__laptop-title">True Laptop Solution</h3>
+                            </div>
+                            <div class="offers__watch offers-card">
+                                <img src="./img/catalog/watch-ct.png" alt="Watch catalog" class="offers__watch-img">
+                                <div class="watch-description">
+                                    <span class="offers__watch-label">Watch</span>
+                                    <h3 class="offers__watch-title">Not just stylisht</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="offers__phone offers-card">
+                            <img src="./img/catalog/phone-ct.png" alt="Phone catalog" class="offers__phone-img">
+                            <span class="offers__phone-label">Phones</span>
+                            <h3 class="offers__phone-title">Your day to day life</h3>
+                        </div>
+                        <div class="offers__tablet offers-card">
+                            <span class="offers__tablet-label">Tablet</span>
+                            <h3 class="offers__tablet-title">Empower your work</h3>
+                            <img src="./img/catalog/ipad-ct.png" alt="Tablet catalog" class="offers__tablet-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="bestsellers">
+                <div class="container">
+                    <h2 class="bestsellers__title">
+                        Save on our most sold items.
+                    </h2>
+                    <p class="bestseller__subtitle">
+                        Our new Limited Edition Winter Design BESPOKE 4-Door Flex™
+                    </p>
+                    <div class="bestseller__flex">
+                        <div class="bestseller__laptop">
+                            <img src="./img/items/laptop-item.png" alt="MacBook Pro 13" class="bestseller__laptop-img">
+                            <h3 class="bestseller__laptop-title">MacBook Pro 13</h3>
+                            <p class="bestseller__laptop-label">Neque porro quisquam est qui dolorem ipsum quia dolor
+                                sit amet</p>
+                            <h4 class="bestseller__laptop-price">$ 1,200.00 USD</h4>
+                        </div>
+                        <div class="bestseller__watch">
+                            <img src="./img/items/watch-item.png" alt="Smart Galaxy Watch 3"
+                                class="bestseller__watch-img">
+                            <h3 class="bestseller__watch-title">Smart Galaxy Watch 3</h3>
+                            <p class="bestseller__watch-label">Neque porro quisquam est qui dolorem ipsum quia dolor sit
+                                amet, consectetur, adipisci velit...</p>
+                            <h4 class="bestseller__watch-price">$ 199.00 USD</h4>
+                        </div>
+                        <div class="bestseller__laptop-pro">
+                            <img src="./img/items/laptop-item2.png" alt="MacBook Air M1"
+                                class="bestseller__laptop-pro-img">
+                            <h3 class="bestseller__laptop-pro-title">MacBook Air M1</h3>
+                            <p class="bestseller__laptop-pro-label">Neque porro quisquam est qui dolorem ipsum quia
+                                dolor sit amet, consectetur, adipisci velit...</p>
+                            <h4 class="bestseller__laptop-pro-price">$ 1,009.00 USD</h4>
+                        </div>
+                        <div class="bestseller__tablet">
+                            <img src="./img/items/ipad-item.png" alt="iPad" class="bestseller__tablet-img">
+                            <h3 class="bestseller__tablet-title">iPad</h3>
+                            <p class="bestseller__tablet-label">Neque porro quisquam est qui dolorem ipsum quia dolor
+                                sit amet, consectetur, adipisci velit...</p>
+                            <h4 class="bestseller__tablet-price">$ 610.00 USD</h4>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="categories">
+                <div class="container">
+                    <h2 class="categories__title">See the best around here</h2>
+                    <p class="categories__subtitle">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</p>
+                    <div class="categories__flex">
+                        <div class="categories__flex-watch">
+                            <span class="categories__flex-watch-label">Smart light bulb pack</span>
+                            <h3 class="categories__flex-watch-title">Latest and greatest</h3>
+                            <button type="button" class="categories__flex-watch-button">Explore</button>
+                            <img src="./img/promotion/watch-prom.png" alt="Smart light bulb pack promotion"
+                                class="categories__flex-watch-img">
+                        </div>
+                        <div class="categories__flex-all">
+                            <span class="categories__flex-all-label">Smart light bulb pack</span>
+                            <h3 class="categories__flex-all-title">Best selling</h3>
+                            <button type="button" class="categories__flex-all-button">Explore</button>
+                            <img src="./img/promotion/gagets-prom.png" alt="Best selling gadgets promotion"
+                                class="categories__flex-all-img">
+                        </div>
+                        <div class="categories__flex-laptop">
+                            <span class="categories__flex-laptop-label">Smart light bulb pack</span>
+                            <h3 class="categories__flex-laptop-title">Every product</h3>
+                            <button type="button" class="categories__flex-laptop-button">Explore</button>
+                            <img src="./img/promotion/gadgets-prom2.png" alt="Every product gadgets promotion"
+                                class="categories__flex-laptop-img">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="ideas">
+                <div class="container">
+                    <h2 class="ideas__title">Ideas have a place here</h2>
+                    <h3 class="ideas__subtitle">Our new Limited Edition Winter Design BESPOKE 4-Door Flex™</h3>
+                    <div class="ideas__flex">
+                        <img src="./img/catalog.png" alt="Ideas catalog illustration" class="ideas__flex-img">
+                        <ul class="ideas__flex-text">
+                            <li>We Make It Easy To Find The Great Design Talent, Easier...</li>
+                            <li>Road Design Handbook For The International Road...</li>
+                            <li>The Best Kept Secrets About Creative People</li>
+                            <li>We Make It Easy To Find The Great Design Talent, Easier...</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="ideas__button">
+                        <span class="ideas__button-text">See all</span>
+                        <svg viewBox="0 0 30 28" xmlns="http://www.w3.org/2000/svg" width="30" height="28" fill="none" aria-hidden="true">
+                            <path d="M7.31464 20.4816L21.9444 6.82715" stroke="#151A1E" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill="none" />
+                            <path d="M7.31464 6.82715L21.9444 6.82715L21.9444 20.4816" stroke="#151A1E" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill="none" />
+                        </svg>
+                    </a>
+                </div>
+            </section>
+            <section class="search">
+                <div class="container">
+                    <h2 class="search__title">Looking for anything else?</h2>
+                    <div class="search__wrapper">
+                        <div class="search__input-wrapper">
+                            <svg class="search__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" aria-hidden="true">
+                                <path d="M19 11C19 6.58172 15.4183 3 11 3C6.58172 3 3 6.58172 3 11C3 15.4183 6.58172 19 11 19C15.4183 19 19 15.4183 19 11Z" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" />
+                                <path d="M20.9999 20.9999L16.6499 16.6499" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" fill="none" />
+                            </svg>
+                            <input type="text" class="search__input" placeholder="Search keyword">
+                        </div>
+                    </div>
+                    <div class="search__tags">
+                        <button type="button" class="search__tag">iPhone</button>
+                        <button type="button" class="search__tag">Charger</button>
+                        <button type="button" class="search__tag">Gift</button>
+                        <button type="button" class="search__tag">Google Pixel 3</button>
+                        <button type="button" class="search__tag">Keyboard</button>
+                        <button type="button" class="search__tag">13 Pro Max</button>
+                        <button type="button" class="search__tag">iPhone 12</button>
+                        <button type="button" class="search__tag">Laptop</button>
+                        <button type="button" class="search__tag">Mobile</button>
+                    </div>
+                </div>
+            </section>
+            <section class="newsletter">
+                <div class="container">
+                    <div class="newsletter__inner">
+                        <h2 class="newsletter__title">Never miss a thing</h2>
+                        <p class="newsletter__subtitle">Sign up for texts to be notified about our best offers on the
+                            perfect gifts.</p>
+                        <div class="newsletter__image-wrapper">
+                            <img src="./img/promotion/gadgets-foot.png" alt="Electronic devices illustration"
+                                class="newsletter__image">
+                        </div>
+                        <form class="newsletter__form">
+                            <input type="email" class="newsletter__input" placeholder="Your email" required>
+                            <button type="submit" class="newsletter__button">Sign up</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__brand">
+                        <img src="./img/icons/log.svg" alt="Logo California" class="footer__logo">
+                        <p class="footer__brand-text">Sign up for texts to be notified about our best offers on the
+                            perfect gifts.</p>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">All products</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Phones</a></li>
+                            <li><a href="#" class="footer__link">Watch</a></li>
+                            <li><a href="#" class="footer__link">Tablet</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Company</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">About</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Support</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Style Guide</a></li>
+                            <li><a href="#" class="footer__link">Licensing</a></li>
+                            <li><a href="#" class="footer__link">Change Log</a></li>
+                            <li><a href="#" class="footer__link">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__column">
+                        <h4 class="footer__column-title">Follow Us</h4>
+                        <ul class="footer__list">
+                            <li><a href="#" class="footer__link">Instagram</a></li>
+                            <li><a href="#" class="footer__link">Facebook</a></li>
+                            <li><a href="#" class="footer__link">LinkedIn</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer__credit">
+                    <p class="footer__credit-text">Made By: <a href="#" class="footer__credit-link" target="_blank"
+                            rel="noopener noreferrer">
+                            Azwedo
+                            <svg viewBox="0 0 30 28" xmlns="http://www.w3.org/2000/svg" width="30" height="28" fill="none" aria-hidden="true">
+                                <path d="M7.31464 20.4816L21.9444 6.82715" stroke="#151A1E" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill="none" />
+                                <path d="M7.31464 6.82715L21.9444 6.82715L21.9444 20.4816" stroke="#151A1E" stroke-linecap="round" stroke-linejoin="round" stroke-width="3" fill="none" />
+                            </svg>
+                        </a></p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
